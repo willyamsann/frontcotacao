@@ -1,0 +1,22 @@
+<h1>Lista de Usuarios</h1>
+<button [routerLink]="['/add-user']" class="btn btn-primary">Adicionar Usuario</button>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Email</th>
+        <th scope="col">Roles</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users; let i = index">
+        <th scope="row">{{i}}</th>
+        <td>{{ user.name }}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.roles}}</td>
+        <td><a (click)="getToDetails(1)">Detalhe do Usuario</a>  </td>
+      </tr>
+    </tbody>
+  </table>

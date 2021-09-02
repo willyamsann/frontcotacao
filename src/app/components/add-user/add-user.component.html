@@ -1,0 +1,27 @@
+
+<h1>
+    Cadastra Usuario
+</h1>
+
+<div class="container">
+    <form>
+        <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nome</label>
+        <input type="text" class="form-control" [(ngModel)]="user.name" name="name" >
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Email</label>
+        <input type="email" class="form-control" [(ngModel)]="user.email" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Email</label>
+        <input type="password" class="form-control"  [(ngModel)]="user.password" name="password"> 
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Roles</label>
+        <input type="text" class="form-control"  [(ngModel)]="user.roles" name="roles">
+      </div>
+      </form>
+      <button  (click)="createUser()" class="btn btn-primary">Submit</button>
+   
+</div>

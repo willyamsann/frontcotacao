@@ -1,0 +1,18 @@
+<h1>
+    Detalhamento do Usuario
+</h1>
+
+<div class="container">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="exampleInputEmail1"  [(ngModel)]="user.name"  aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleInputPassword1" [(ngModel)]="user.email">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Roles</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="user.roles">
+      </div>
+</div>
